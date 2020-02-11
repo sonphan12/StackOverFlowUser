@@ -9,12 +9,12 @@
 
     <TextView
         android:id="@+id/txtName"
-        android:layout_width="170dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:ellipsize="end"
         android:maxLines="1"
         android:textColor="@color/black"
-        android:textSize="22sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Son Phan" />
@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imgAvatar"
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:text="@string/reputation"
-        android:textSize="14sp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@id/txtReputationVal"
         app:layout_constraintStart_toEndOf="@id/txtReputationVal"
         app:layout_constraintTop_toTopOf="@id/txtReputationVal" />
@@ -60,12 +60,14 @@
 
     <TextView
         android:id="@+id/txtLocation"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ellipsize="end"
-        android:maxLines="1"
+        android:maxLines="2"
+        android:textSize="12sp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@id/imgLocation"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/imgLocation"
         app:layout_constraintTop_toTopOf="@id/imgLocation"
         tools:text="Quan 7, TP. HCM" />
@@ -85,6 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:text="@string/last_seen"
+        android:textSize="12sp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@id/imgLastSeen"
         app:layout_constraintStart_toEndOf="@id/imgLastSeen"
@@ -92,11 +95,14 @@
 
     <TextView
         android:id="@+id/txtLastSeenVal"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ellipsize="end"
-        android:maxLines="1"
+        android:maxLines="2"
+        android:textSize="12sp"
         android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/txtLastSeen"
         app:layout_constraintStart_toEndOf="@id/txtLastSeen"
         app:layout_constraintTop_toTopOf="@id/txtLastSeen"

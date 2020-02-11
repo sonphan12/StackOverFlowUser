@@ -51,13 +51,4 @@ class UserAdapter : RecyclerView.Adapter<UserAdapter.UserVH>() {
     }
 
     class UserVH(v: View) : RecyclerView.ViewHolder(v)
-
-    data class UserUiModel(
-        val name: String,
-        val avatar: String,
-        val reputation: Int,
-        val location: String,
-        val isBookmarked: Boolean,
-        val lastSeen: Long
-    )
 }
