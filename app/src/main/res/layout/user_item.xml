@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Son Phan" />
+
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@id/txtReputationVal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtName"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/txtReputationVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgAvatar"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/txtReputation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/reputation"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/txtReputationVal"
+        app:layout_constraintStart_toEndOf="@id/txtReputationVal"
+        app:layout_constraintTop_toTopOf="@id/txtReputationVal" />
+
+    <ImageView
+        android:id="@+id/imgLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location"
+        app:layout_constraintStart_toEndOf="@id/txtName"
+        app:layout_constraintTop_toTopOf="@id/imgAvatar" />
+
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/imgLocation"
+        app:layout_constraintStart_toEndOf="@id/imgLocation"
+        app:layout_constraintTop_toTopOf="@id/imgLocation"
+        tools:text="Quan 7, TP. HCM" />
+
+    <ImageView
+        android:id="@+id/imgLastSeen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_clock"
+        app:layout_constraintStart_toEndOf="@id/txtName"
+        app:layout_constraintTop_toBottomOf="@id/imgLocation" />
+
+    <TextView
+        android:id="@+id/txtLastSeen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/last_seen"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/imgLastSeen"
+        app:layout_constraintStart_toEndOf="@id/imgLastSeen"
+        app:layout_constraintTop_toTopOf="@id/imgLastSeen" />
+
+    <TextView
+        android:id="@+id/txtLastSeenVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/txtLastSeen"
+        app:layout_constraintStart_toEndOf="@id/txtLastSeen"
+        app:layout_constraintTop_toTopOf="@id/txtLastSeen"
+        tools:text="12/09/1997" />
+
+    <ImageView
+        android:id="@+id/imgBookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_bookmark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
